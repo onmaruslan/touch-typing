@@ -1,0 +1,32 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 35%;
+  transition: 0.5s;
+}
+
+.settingsWrapper {
+  display: flex;
+  justify-content: space-between;
+  height: 4em;
+}
+
+.input {
+  border: var(--border-default);
+  outline: none;
+  background: none;
+  width: 5em;
+  height: 3em;
+  padding: 0 1em;
+  transition: 0.3s;
+  &:focus {
+    border: var(--border-active);
+  }
+}
+
+@media (max-height: 750px) {
+  .wrapper {
+    width: 30%;
+  }
+}

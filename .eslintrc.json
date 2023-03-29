@@ -1,0 +1,51 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "airbnb",
+    "airbnb-typescript",
+    "airbnb/hooks",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "plugins": [
+    "eslint-plugin-react",
+    "@typescript-eslint"
+  ],
+  "rules": {
+    "import/prefer-default-export": "off",
+    "no-trailing-spaces": "warn",
+    "implicit-arrow-linebreak": "warn",
+    "curly": "off",
+    "nonblock-statement-body-position": "off",
+    "react/no-array-index-key": "warn",
+    "react/jsx-props-no-spreading": "warn",
+    "@typescript-eslint/ban-ts-comment": "warn",
+    "@typescript-eslint/semi": [2, "never"],
+    "max-len": [
+      "error",
+      {
+        "code": 120,
+        "tabWidth": 2,
+        "comments": 120
+      }
+    ],
+    "no-console": [
+      "warn",
+      {
+        "allow": ["error", "warn"]
+      }
+    ],
+    "react/prop-types": 0,
+    "react/function-component-definition": 0,
+    "react/require-default-props": "off",
+    "@typescript-eslint/no-floating-promises": "warn"
+  }
+
+}

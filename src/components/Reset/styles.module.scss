@@ -1,0 +1,26 @@
+.btn {
+  width: auto;
+  position: relative;
+  height: 100%;
+  cursor: pointer;
+
+  svg {
+    width: auto;
+    height: 100%;
+    animation: loading 2s linear infinite;
+    transition: 0.4s;
+    opacity: 0.5;
+    &:hover {
+      opacity: 1 !important;
+    }
+  }
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}

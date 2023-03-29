@@ -1,0 +1,38 @@
+.flagsBtn {
+  cursor: pointer;
+  height: 100%;
+  position: relative;
+  z-index: 0;
+  transition: 0.5s;
+  svg {
+    width: auto;
+    height: 100%;
+  }
+  &:hover {
+    .flagHidden {
+      transform: translateX(70%);
+    }
+  }
+  &:disabled {
+    opacity: 0.4;
+    pointer-events: none;
+  }
+}
+.flag {
+  height: 100%;
+  position: relative;
+  z-index: 2;
+}
+.flagHidden {
+  height: 100%;
+  width: 100%;
+  opacity: 0.3;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  transition: 0.5s;
+  &:hover {
+    opacity: 0.6;
+  }
+}

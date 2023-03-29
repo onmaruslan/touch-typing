@@ -1,0 +1,15 @@
+.input {
+  border: var(--border-default);
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+  text-align: center;
+  font-size: 1.5em;
+  &:focus {
+    border: var(--border-active);
+  }
+}
+.characters {
+  width: 5em;
+  height: 100%;
+}
